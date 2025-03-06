@@ -19,9 +19,9 @@ function App() {
           </div>
         </div>
         <div className='lowerSide'>
-          <div className='listItems'><img className='listitemsImg' src={home} alt='Home' />Home</div>
-          <div className='listItems'><img className='listitemsImg' src={saved} alt='Saved' />Save</div>
-          <div className='listItems'><img className='listitemsImg' src={rocket} alt='Upgrade' />Upgrade to Pro</div>
+          <div className='listItems'><img className='listItemsImg' src={home} alt='Home' />Home</div>
+          <div className='listItems'><img className='listItemsImg' src={saved} alt='Saved' />Save</div>
+          <div className='listItems'><img className='listItemsImg' src={rocket} alt='Upgrade' />Upgrade to Pro</div>
         </div>
       </div>
 
