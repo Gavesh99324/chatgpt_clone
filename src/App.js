@@ -5,6 +5,10 @@ import msgIcon from './assets/message.svg';
 import home from './assets/home.svg';
 import saved from './assets/bookmark.svg';
 import rocket from './assets/rocket.svg';
+import sendBtn from './assets/send.svg';
+import userIcon from './assets/user-icon.png';
+import gptImgLogo from './assets/chatgptLogo.svg';
+
 
 function App() {
   return (
@@ -27,7 +31,20 @@ function App() {
 
 
       <div className='main'>
-
+        <div className='chats'>
+          <div className='chat'>
+            <img className='chatImg' src={userIcon} alt='' /><p className='txt'>I’m ChatGPT, an AI language model created by OpenAI. My main function is to assist with a variety of tasks, including answering questions, generating content, and offering suggestions. </p>
+          </div>
+          <div className='chat bot'>
+            <img className='chatImg' src={gptImgLogo} alt='' /><p className='txt'>I’m ChatGPT, an AI language model created by OpenAI. My main function is to assist with a variety of tasks, including answering questions, generating content, and offering suggestions.I’m ChatGPT, an AI language model created by OpenAI. My main function is to assist with a variety of tasks, including answering questions, generating content, and offering suggestions.I’m ChatGPT, an AI language model created by OpenAI. My main function is to assist with a variety of tasks, including answering questions, generating content, and offering suggestions.</p>
+          </div>
+        </div>
+        <div className='chatFooter'>
+          <div className='inp'>
+            <input type='text' placeholder='Send a message' /><button className='send'><img src={sendBtn} alt='Send' /></button>
+          </div>
+          <p>ChatGPT may produce inaccurate information about people, places, or facts.</p>
+        </div>
       </div>
     </div>
   );
